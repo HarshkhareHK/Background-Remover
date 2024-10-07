@@ -40,11 +40,12 @@ def main():
 
     # Mapping of background image files to avoid loading all at once
     background_images = {
-        "Studio 1": "background1.jpg",
-        "Studio 2": "background2.jpg",
-        "Studio 3": "background3.jpg",
-        "Studio 4": "background4.jpg"
+    "Studio 1": "assets/background1.jpg",
+    "Studio 2": "assets/background2.jpg",
+    "Studio 3": "assets/background3.jpg",
+    "Studio 4": "assets/background4.jpg"
     }
+
     selected_background_image = st.image(Image.open(background_images[selected_background]), use_column_width=True)
     
     uploaded_file = st.file_uploader("Choose an image", type=["png", "jpg", "jpeg"])
